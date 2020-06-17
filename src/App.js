@@ -1,4 +1,3 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import React, { Fragment } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from "./pages";
