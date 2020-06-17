@@ -21,7 +21,17 @@ const Header = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link text-light" href="/">
-                Link
+                Locations
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-light" href="/">
+                Pricing
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-light" href="/">
+                Contact
               </a>
             </li>
           </ul>
@@ -50,6 +60,12 @@ const Wrapper = styled.nav`
   .navbar-collapse {
     /* flex-basis: 100%; */
     flex-grow: 0;
+    li {
+      font-size: 1.2em;
+    }
+    .active {
+      font-weight: bold;
+    }
   }
 `;
 
