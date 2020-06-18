@@ -37,7 +37,7 @@ const Header = () => {
           </ul>
         </div>
 
-        <div>
+        <div className="d-none d-md-block">
           <button className="btn btn-outline-light rounded-lg">Login</button>
           <button className="btn btn-outline bg-light ml-2 ">Signup</button>
         </div>

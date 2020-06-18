@@ -72,9 +72,9 @@ const HomePage = () => {
     <Wrapper>
       <div className="mainbg">
         <Header />
-        <div className="hero h-100 container w-100 d-flex align-items-center ">
+        <div className="hero h-100 container w-100 d-flex align-items-center py-3">
           <div className="row w-100 text-light">
-            <div className="col-md-6">
+            <div className="col-md-6 text-content">
               <h3 className="display-2 font-weight-bold">One Day</h3>
               <h3 className="display-2 font-weight-bold">Or</h3>
               <h3 className="display-2 font-weight-bold">Day One</h3>
@@ -188,25 +188,23 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="partners">
-        <div className="container d-flex align-items-center ">
-          <div>
-            <h2 className="display-4 text-uppercase font-weight-bold text-center mt-4 mb-3">
-              Our partners
-            </h2>
-            <div className="row h-100 ">
-              {brands.map((item, i) => (
-                <div className="col-md-3 mt-4 text-center" key={i + 1}>
-                  <a href="/">
-                    <img src={item} alt="" style={{ width: "7rem" }} />
-                  </a>
-                </div>
-              ))}
-            </div>
+      <section className="partners my-5 ">
+        <div className="container  ">
+          <h2 className="display-4 text-uppercase font-weight-bold text-center mt-4 mb-3">
+            Our partners
+          </h2>
+          <div className="row  ">
+            {brands.map((item, i) => (
+              <div className="col-md-3 text-center mt-5" key={i + 1}>
+                <a href="/">
+                  <img src={item} alt="" style={{ width: "7rem" }} />
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </section>
-      <footer className="bg-dark " style={{ height: "20rem" }}>
+      <footer className="bg-dark py-4">
         <div className="container d-flex justify-content-center flex-column h-100">
           <div className="row ">
             <div className="col-md-4">
@@ -258,29 +256,38 @@ const HomePage = () => {
 const Wrapper = styled.section`
   width: 100%;
   height: 100%;
+  /* background: red; */
   .mainbg {
+    width: 100%;
     background: url("/mainbg.png");
-    height: 90vh;
+    height: 90%;
     background-position: center;
     background-size: cover;
+    @media screen and (max-width: 375px) {
+      max-width: 375px;
+    }
+    .text-content {
+      @media screen and (max-width: 812px) {
+        text-align: center;
+      }
+    }
   }
   .showcase {
     .col-md-6 {
       margin-top: 1rem;
     }
+    img {
+      width: 100%;
+      max-width: 70%;
+    }
+    @media screen and (max-width: 400px) {
+      text-align: center;
+    }
   }
   .line {
     border: 1px solid black;
-    /* height: 1px; */
     width: 20px;
     margin: 0 1rem;
-  }
-  .content {
-    display: grid;
-    place-content: center;
-  }
-  .partners .container {
-    height: 60vh;
   }
 `;
 export default HomePage;
