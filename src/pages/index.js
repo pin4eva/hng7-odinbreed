@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Header from "../components/Header";
 import Program from "../components/Program";
-import { programs, brands } from "../lib";
-import bg from "../lib/mainbg.png";
+import { brands, programs } from "../lib";
 
 const HomePage = () => {
   return (
@@ -204,7 +203,7 @@ const Wrapper = styled.section`
   }
   .mainbg {
     width: 100%;
-    background: url(${bg});
+    background: url("/mainbg.png");
     height: 90%;
     background-position: center;
     background-size: cover;
@@ -225,7 +224,7 @@ const Wrapper = styled.section`
       width: 100%;
       max-width: 70%;
     }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 768px) {
       text-align: center;
     }
   }
