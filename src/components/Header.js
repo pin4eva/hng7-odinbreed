@@ -4,15 +4,28 @@ import styled from "styled-components";
 const Header = () => {
   return (
     <Wrapper classNameName="pt-3 ">
-      <nav className="navbar navbar-expand-lg container d-flex justify-content-between  ">
+      <nav className="navbar navbar-expand-md container d-flex justify-content-between  ">
         <div>
           <a className="navbar-brand text-light" href="/">
             <img src="/Vector.png" alt="logo" style={{ width: "1rem" }} />
             <span className="pl-1">OdinBreed</span>
           </a>
         </div>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon">
+            <i className="fas fa-bars text-light"></i>
+          </span>
+        </button>
 
-        <div className="collapse navbar-collapse ">
+        <div
+          className="collapse navbar-collapse text-center"
+          id="collapsibleNavbar"
+        >
           <ul className="navbar-nav ">
             <li className="nav-item active">
               <a className="nav-link text-light" href="/">
