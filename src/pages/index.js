@@ -203,7 +203,8 @@ const Wrapper = styled.section`
   }
   .mainbg {
     width: 100%;
-    background: url("/mainbg.png");
+    background: url("/bg2.png");
+    background-repeat: no-repeat;
     height: 90%;
     background-position: center;
     background-size: cover;
