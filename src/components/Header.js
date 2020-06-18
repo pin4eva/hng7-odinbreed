@@ -17,7 +17,7 @@ const Header = () => {
           data-toggle="collapse"
           data-target="#collapsibleNavbar"
         >
-          <span class="navbar-toggler-icon">
+          <span className="navbar-toggler-icon">
             <i className="fas fa-bars text-light"></i>
           </span>
         </button>

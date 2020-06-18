@@ -18,9 +18,9 @@ const HomePage = () => {
               <h3 className="display-2 font-weight-bold">Day One</h3>
               <h3 className="display-4">the choice is yours</h3>
             </div>
-            <div className="col-md-6 d-flex text-right  ">
-              <div className=" m-auto ">
-                <img src="/stores.png" alt="stores" className="text-right" />
+            <div className="col-md-6 d-flex flex-column justify-content-center align-items-end">
+              <div className=" w-100 text-center">
+                <img src="/stores.png" alt="stores" style={{ width: "70%" }} />
               </div>
             </div>
           </div>
