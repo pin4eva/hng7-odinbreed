@@ -82,7 +82,6 @@ const HomePage = () => {
                   <img
                     src="/vector-2.png"
                     alt="call-center"
-                    // width="7rem"
                     style={{ width: "5rem" }}
                   />
                 </div>
@@ -178,8 +177,8 @@ const HomePage = () => {
               <div className="text-center text-light">
                 <ul className="nav flex-column">
                   <li className="nav-item py-1">04 BL344</li>
-                  <li className="nav-item py-1">Lagos, Nigeria</li>
-                  <li className="nav-item py-1">+2347062275085</li>
+                  <li className="nav-item py-1">NY, USA</li>
+                  <li className="nav-item py-1">01871234</li>
                 </ul>
               </div>
             </div>
